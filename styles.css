@@ -1,0 +1,201 @@
+/* Background Image related to quiz */
+body {
+  height: 100vh;
+  background-image: url('https://media.istockphoto.com/id/1539344241/photo/q-and-a-concept-q-and-a-symbols-on-wooden-cube-block-on-a-grey-background-illustration-for.jpg?s=612x612&w=0&k=20&c=YG9N8iNFRNyjFpjm8zJekEURDcE6f-SsRIXIEHLEhHU='); 
+  background-size: cover;
+  background-position: center;
+ background-attachment: fixed;  /* Keep the background fixed */
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  text-align: center;
+  position: relative;
+}
+
+/* Top Navigation Bar */
+#top-nav {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent; /* Semi-transparent black background */
+  color: white;
+  padding: 10px 15px;;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 95%;
+  z-index: 100;
+}
+
+#logo img {
+  margin-top: 20px;
+  width: 90px; /* Adjust the logo size */
+  height: auto;
+}
+
+#auth-buttons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#auth-buttons button{
+  height: 5px;
+  background-color: #353436;
+  padding: 8px 18px 30px;
+  font-size: 1.2em;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#auth-buttons button:hover {
+  background-color: transparent;
+}
+
+
+/* Container for the quiz */
+#quiz-container {
+  position: absolute; /* Absolute positioning */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Shift back by half its size */
+  text-align: center;
+  padding: 20px;
+  background: transparent; /* Light background for readability */
+  border-radius: 10px;
+  width: 90%; /* Responsive width */
+  max-width: 600px; /* Limit the maximum size */
+  box-shadow: 0 6px 50px rgba(5, 5, 5, 0.2);
+  box-sizing: border-box; /* Ensure padding and border don't overflow */
+  overflow: hidden;
+}
+
+/* Animated, Popping Heading */
+#quiz-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  color: #070707;
+  animation: popIn 1s ease-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Popping animation */
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#question {
+  color: #fff;
+  font-weight: 700;
+  font-size: larger;
+  
+}
+/* Style for options and buttons */
+#options {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+#options li {
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  background-color: #fffefe;
+  color: #292828;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-family: "Montserrat", sans-serif;
+}
+
+#options li:hover {
+  background-color: #c7c4c7;
+}
+
+#next-btn{
+  background-color: #353436;
+  padding: 5px 15px;
+  font-size: 1.2em;
+  font-weight: 550;
+  color: white;
+  border: none;
+  margin-top: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Montserrat", sans-serif;
+}
+
+#next-btn:hover {
+  background-color: transparent;
+}
+
+/* Progress Bar */
+#progress-bar {
+  background-color: #f5f9fc;
+  width: 100%;
+  height: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+#progress {
+  transition: width 0.5s ease;
+  background-color: #76c7c0;
+  height: 100%;
+  width: 0%;
+  border-radius: 10px;
+}
+
+#score {
+  font-weight: 900;
+  font-size: larger;
+}
+
+#result{
+  font-weight: 700;
+  font-size: large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

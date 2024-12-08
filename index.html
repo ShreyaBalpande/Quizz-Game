@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <!-- Top Navigation Bar -->
+  <nav id="top-nav">
+    <div id="logo">
+      <img src="Quiz2.png" alt="Logo" id="logo-img">
+    </div>
+    <div id="auth-buttons">
+      <button id="login-btn">Login</button>
+      <button id="signup-btn">Signup</button>
+    </div>
+  </nav>
+
+  <!-- Quiz Container -->
+  <div id="quiz-container">
+    <h1 id="quiz-heading">Welcome to the Quiz Game!</h1>
+
+    <div id="question"></div>
+    <ul id="options"></ul>
+    <div id="feedback"></div>
+    <button id="next-btn" disabled>Next</button>
+
+    <div id="progress-bar">
+      <div id="progress"></div>
+    </div>
+    <div id="result" style="display: none;">
+      <p>Your score: <span id="score">0</span> out of <span id="total"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
